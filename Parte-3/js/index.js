@@ -3,6 +3,7 @@ function ObtenerForma(){
     let input = document.getElementById("input");
     let userComment = document.getElementById("userComment");
     let submit = document.getElementById("submit");
+    let seccionComments = document.getElementById("seccionComments");
 
     submit.addEventListener("click", (event) => {
         
@@ -13,8 +14,10 @@ function ObtenerForma(){
         } else if ( userComment === ""){
             console.log("entro");
         } else{
-            input.value.innerHTML += 
-            userComment.value() +=
+            let inputValue = input.value;
+            let inputValueComment = input.value;
+            seccionComments.innerHTML += "<div id=estilo><div/>"+inputValue;
+            //seccionComments.innerHTML += "<div> <div/>"+inputValueComment;
 
         };
        
